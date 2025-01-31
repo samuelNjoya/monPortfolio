@@ -115,14 +115,14 @@ html{
 .home{
     height: 100vh;
     display: flex;
-    background: url("img/img1.jpg") no-repeat center;
+    background: url("img/profile-5.png") no-repeat center;
     min-height: 500px;
     /* width: 100%; */
     color: white;
     color: var(--color-1);
     /* font-size: 40px; */
     font-weight: bold;
-    background-color: #333;
+    /* background-color: #111; */
 }
 
 .home .max-width{
@@ -166,10 +166,12 @@ html{
  }
 
 
+ /*-- similar part --*/
+section{
+    padding:100px 0;
+}
 
-
-/* begin about part styling */
-.about .title{
+section .title{
     position: relative;
     margin: 70px 0;
     font-size: 40px;
@@ -180,7 +182,7 @@ html{
     z-index: -1;
 }
 
-.about .title::before{
+section .title::before{
     position: absolute;
     content: "";
     width: 200px;
@@ -191,6 +193,8 @@ html{
     transform: translateX(-50%);
 }
 
+
+/* begin about part styling */
 .about .title::after{
     position: absolute;
     content: "who i am";
@@ -235,6 +239,11 @@ html{
 .service{
     background-color: #111;
     color: white;
+   
+}
+
+.service .title::after{
+  content: "my services";
    
 }
 
@@ -317,9 +326,17 @@ html{
 
 
 /* begin teams part styling */
-/* .teams .title::after{
+.teams .title::after{
     content: "who with me";
-} */
+    position: absolute;
+    color: var(--color-1);
+    background-color: white;
+    font-size: 22px;
+    padding: 5px;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+}
 
 .teams .carousel{
     display: flex;
@@ -393,6 +410,18 @@ html{
 
 
 /* begin skills part styling */
+
+.contacts .title::after{
+    content: "my contact";
+    position: absolute;
+    color: var(--color-1);
+    background-color: white;
+    font-size: 22px;
+    padding: 5px;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+}
 
 .contacts .contacts-content{
     display: flex;
