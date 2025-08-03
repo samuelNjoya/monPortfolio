@@ -14,6 +14,7 @@ html{
 :root{
     /* --color-1:crimson; */
     --color-1:rgba(15, 87, 232, 0.987);
+   
 }
 
 .navbar{
@@ -65,7 +66,7 @@ html{
   color: white;
   font-weight: 500;
   font-size: 20px;
-  margin-left: 8px;
+  margin-left: 20px;
   transition: all 0.3s ease;
 }
 
@@ -168,7 +169,7 @@ html{
 
  /*-- similar part --*/
 section{
-    padding:100px 0;
+    padding:60px 0;
 }
 
 section .title{
@@ -418,16 +419,35 @@ section .title::before{
     height: 100%;
     top: 0;
     left: 0;
-    width: 80%;
+    width:85%;
     background-color: var(--color-1);
  }
 
  .skills .skills-content .rigth .html::before{
    width: 90%;
  }
- .skills .skills-content .rigth .css::before{
-    width: 85%;
-  }
+ .skills .skills-content .rigth .js::before{
+    width: 70%;
+}
+.skills .skills-content .rigth .php::before{
+    width: 65%;
+}
+.skills .skills-content .rigth .laravel::before{
+    width: 70%;
+}
+ .skills .skills-content .rigth .bootstrap::before{
+    width: 80%;
+}
+.skills .skills-content .rigth .reactjs::before{
+    width: 50%;
+}
+.skills .skills-content .rigth .java::before{
+    width: 65%;
+}
+.skills .skills-content .rigth .tcss::before{
+    width: 45%;
+}
+
 
 
 /* begin teams part styling */
@@ -589,7 +609,75 @@ section .title::before{
  }
 
 
+ .contacts .contacts-content .rigth form{
+    /* background-color: #111; */
+    padding: 35px 0;
+}
 
+.contacts .contacts-content .rigth form .filds{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+}
+
+.contacts .contacts-content .rigth form .fild{
+    width: 400px;
+    margin: 15px 0;
+    height: 55px;
+    /* background-color: red; */
+}
+
+.contacts .contacts-content .rigth form .fild1{
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    height: 55px;
+}
+
+.contacts .contacts-content .rigth form .fild1 input{
+    padding-left: 6px;
+    font-size: 13px;
+    height: 100%;
+    border-radius: 6px;
+    outline: none;
+    border: 2px solid var(--color-1);
+}
+
+.contacts .contacts-content .rigth form .fild2{
+    width: 400px;
+    height: 250px;
+    
+}
+
+.contacts .contacts-content .rigth form .fild input,textarea{
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
+  outline: none;
+  border: 2px solid var(--color-1);
+  padding-left: 6px;
+  font-size: 13px;
+}
+
+.contacts .contacts-content .rigth form .fild button{
+    display: inline-block;
+    background-color: var(--color-1);
+    color: white;
+    border-radius: 10px;
+    border: 5px solid var(--color-1);
+    padding: 10px 15px 10px 15px!important;
+    /* padding: 0 20px!important; */
+    font-size: 20px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    margin-top: 30px!important;
+    cursor: pointer;
+}
+.contacts .contacts-content .rigth form .fild button:hover{
+  color: var(--color-1);
+  background-color: transparent;
+}
 
 
 /* begin footer part styling */
@@ -654,6 +742,7 @@ footer p a:hover{
 .navbar .menu li{
     color: white;
     display: block;
+    margin-bottom: 20px;
 }
 .navbar .menu li{
     color: white;
@@ -663,7 +752,25 @@ footer p a:hover{
   .navbar .menu li a{
     display: inline-block;
     margin: 0 20px;
+    font-weight: 500;
   }
+
+  .navbar .menu li a:hover{
+   color: var(--color-1);
+  }
+
+  .home{
+    height: 10vh;
+    display: flex;
+    background: url("img/profile-31.png") no-repeat cover;
+    min-height: 500px;
+    /* width: 100%; */
+    color: white;
+    color: var(--color-1);
+    /* font-size: 40px; */
+    font-weight: bold;
+    background-color: #888!important;
+}
 
 }
 
@@ -671,4 +778,105 @@ footer p a:hover{
 
 @media (max-width:670px){
  
+    html{
+       /* background-color: red;background: url("img/img1.jpg") no-repeat cover!important;*/
+    }
+
+    .menu li a{
+        color: white;
+        font-weight: 500;
+        font-size: 20px;
+        margin-bottom: 35px;
+        transition: all 0.3s ease;
+      }
+      
+      .menu li a:hover{
+          color: var(--color-1);
+      }
+
+      .home{
+        height: 100vh;
+        display: flex;
+        /* background: url("img/img2.jpg") no-repeat cover; */
+        min-height: 500px;
+        /* width: 100%; */
+        color: white;
+        color: var(--color-1);
+        /* display: none; */
+        /* font-size: 40px; */
+        font-weight: bold;
+        background-color: #888!important;
+    }
+
+    /* .home .max-width{
+        margin: auto 0 auto 40px;
+    } */
+    
+    .home .home-content .text-1{
+        font-size: 20px;
+    }
+    
+    .home .home-content .text-2{
+        font-size: 50px;
+        margin-bottom: 12px;
+    }
+    
+    .home .home-content .text-3{
+        font-size: 25px;
+        margin-bottom: 12px;
+    }
+    
+    .home .home-content .text-3 span{
+        background-color: var(--color-1);
+        color: white;
+    }
+
+    .about .about-content,.service .service-content,.skills .skills-content,.contacts .contacts-content{
+        display: flex;
+        flex-direction: column;
+     }
+
+
+     .about .about-content .column{
+        width: 100%;
+      }
+     
+     .about .about-content .left{
+        width: 100%;
+        margin-bottom: 15px;
+     }
+     .about .about-content .left img{
+        width: 100%;
+     }
+     
+     .about .about-content .rigth{
+        width: 100%;
+     }
+
+     /*service*/
+     .service .service-content .card{ 
+       width:  100%;
+       margin: 15px 0;
+    }
+    /*competences*/
+    .skills .skills-content .left{
+        width: 100%;
+        margin-bottom: 35px;
+    }
+    
+    .skills .skills-content .rigth{
+        width: 100%;
+    }
+    
+    /*comptact*/
+    .contacts .contacts-content .left{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .contacts .contacts-content .rigth{
+        width: 100%;
+    }
+
+     
+
 }
